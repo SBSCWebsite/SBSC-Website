@@ -1,0 +1,193 @@
+/* General styles */
+body {
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+	color: var(--sbscBlue);
+}
+
+img {
+	border-radius: 10px;
+
+	transition: all 150ms ease-in-out;
+}
+
+img:hover {
+	border-radius: 15px;
+	border: var(--sbscOrange) 0px solid;
+	
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+
+	transition: all 150ms ease-in-out;
+}
+
+header, footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1em 0;
+}
+
+main {
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 100%;
+}
+
+/* Section styles */
+section {
+	margin-bottom: 40px;
+}
+
+h1 {
+	color: var(--sbscBlue);
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+h3, h4 {
+	color: #333;
+}
+
+h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+h4 {
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+blockquote {
+	font-style: italic;
+	color: #555;
+	border-left: 5px solid #ccc;
+	margin: 20px 0;
+	padding-left: 10px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 10px 0;
+}
+
+/* Specific styles for sections */
+#sookdeo_bissoondoyal_history img {
+	margin-top: 20px;
+}
+
+#legacy_history img {
+	margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+	margin-top: 40px;
+}
+
+.portrait-quote-container {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Vertically align items */
+}
+
+.portrait {
+    width: 300px; /* Adjust as needed */
+    margin-right: 30px; /* Add space between portrait and quote */
+}
+
+.quote {
+    text-align: center; /* Optional: Center the quote text */
+}
+
+/*---*/
+.biography-header {
+    display: flex;
+    flex-direction: column; /* Stack heading and portrait/quote vertically */
+    align-items: center;
+    width: 100%; 
+    margin-bottom: 20px; /* Add space below header */
+}
+
+.quote cite {
+    display: block;         /* Make the citation a block element */
+    text-align: right;      /* Align to the right */
+    margin-top: 10px; 
+}
+
+.biography-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.biography-content p {
+    line-height: 1.6;  
+	font-weight: 500;
+    text-align: justify;
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .portrait-quote-container {
+        flex-direction: column; /* Stack portrait and quote vertically on small screens */
+    }
+
+    .quote {
+        text-align: left; /* Align quote text to the left on small screens */
+    }
+
+    .quote cite {
+        text-align: left;  /* Align citation to the left on small screens */
+    }
+}
+
+/*Style 2*/
+#legacy_history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px; /* Limit width for readability */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#legacy_history h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#legacy_history h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center; /* Center text for better layout */
+}
+
+#legacy_history img {
+    width: 100%; /* Make images responsive */
+    max-width: 500px; /* Limit maximum image width */
+    height: auto;  
+    object-fit: cover; /* Cover the container and crop if needed */
+    margin-bottom: 20px; /* Add space between images */
+    border-radius: 8px; /* Slightly round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Optional: Create a two-column layout for image pairs */
+#legacy_history img:nth-child(even) { 
+    margin-left: 20px; /* Add space between paired images */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #legacy_history img {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    #legacy_history img:nth-child(even) { 
+        margin-left: 0;   /* Remove space between images on small screens */
+    }
+}

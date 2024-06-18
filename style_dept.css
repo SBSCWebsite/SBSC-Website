@@ -1,0 +1,28 @@
+
+/* Image Styles */
+section img {
+    width: 100%; /* Ensure images don't exceed container width */
+    height: auto;     /* Maintain aspect ratio */
+    border-radius: 8px;  /* Slightly rounded corners */
+    object-fit: cover;
+}
+
+.divider {
+    width: 100%;           /* Full width */
+    height: 2px;            /* Adjust height */
+    background-color: var(--sbscBlue); /* Blue divider */
+    margin: 30px 0;          /* Add space above and below */
+  }  
+  
+h3 {
+    color: var(--sbscBlue);
+}
+
+blockquote,
+blockquote h4 {
+    color: var(--sbscOrange);
+}
+
+h4 {
+    font-size: large;
+}

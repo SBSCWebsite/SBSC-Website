@@ -1,0 +1,45 @@
+main {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;   /* Center sections horizontally */
+    max-width: 900px;      /* Limit main content width (optional) */
+    margin: 0 auto;        /* Center the main content on the page (optional) */
+    padding: 20px;
+}
+
+#national_anthem_vitals, 
+#school_prayer_vitals {
+    text-align: center;  
+}
+
+h1 {
+    font-size: 2.5em;
+	color: var(--sbscBlue);
+
+}
+
+h3 {
+    font-size: 1.2em;
+    line-height: 1.9;  /* Improve readability */
+    /* Optional: If you want to indent the lines of the prayer/anthem */
+    text-indent: 20px; 
+}
+
+/* Optional: Style for the prayer/anthem text */
+h3 {
+    font-style: italic;  /* Use italic for a more poetic feel */
+}
+
+/* ... (Your existing styles) ... */
+
+#national_anthem_vitals h3,
+#school_prayer_vitals h3 {
+  white-space: pre-line; /* Preserve line breaks, but allow wrapping on long lines */
+}
+
+.horizontal-spacer {
+	height: 1px;
+	background-color: var(--sbscOrange);
+	width: 100%; /* Adjust the width as needed */
+  }
+  

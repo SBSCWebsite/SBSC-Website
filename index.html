@@ -28,10 +28,10 @@
     </div>
 
     <div class="menuBar menuBarVar1 hidden" id="aboutSubBar">
-        <h3>History</h3>
-        <h3>Vitals</h3>
-        <h3>Administration</h3>
-        <h3>Departments</h3>
+        <h3 onclick="SwitchPage('./history.html')">History</h3>
+        <h3 onclick="SwitchPage('./vitals.html')">Vitals</h3>
+        <h3 onclick="SwitchPage('./admin.html')">Administration</h3>
+        <h3 onclick="SwitchPage('./department.html')">Departments</h3>
     </div>
 
     <main>
@@ -51,33 +51,37 @@
        </section>
 
        <section class="highlights">
-        <h1 style="font-size: 30px;width: 100% !important;">Highlights</h1>
-        <div class="highlight-container">
-            <div class="highlight-item">
-                <img src="./Images/Highlights/highlight 1.jpg" alt="Highlight 1 Image">
-                <h2>Golden jubilee celebrations</h2>
-                <p>This highlight commemorates the school's 50th anniversary with a series of special events, including the release of a commemorative magazine capturing the institution's rich history and achievements, and an exhibition showcasing its growth and evolution over the decades.</p>
+            <h1 style="font-size: 30px;width: 100% !important;">Highlights</h1>
+            <div class="highlight-container">
+                <div class="highlight-item">
+                    <img src="./Images/Highlights/highlight 1.jpg" alt="Highlight 1 Image">
+                    <h2>Golden jubilee celebrations</h2>
+                    <p>This highlight commemorates the school's 50th anniversary with a series of special events, including the release of a commemorative magazine capturing the institution's rich history and achievements, and an exhibition showcasing its growth and evolution over the decades.</p>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="highlight-item">
+                    <img src="./Images/Highlights/highlight 2.jpg" alt="Highlight 2 Image">
+                    <h2>Winner of OMNICANE AWARD 2023</h2>
+                    <p>This highlight showcases the school's exceptional achievement in receiving the prestigious OMNICANE AWARD in 2023. The award recognizes excellence in a particular field or category, reflecting the dedication and hard work of the school's students, teachers, and staff.</p>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="highlight-item">
+                    <img src="./Images/Highlights/highlight 3.jpg" alt="Highlight 3 Image">
+                    <h2>List of laureates</h2>
+                    <p>This section proudly displays the names and achievements of the school's laureates, those students who have achieved outstanding academic or extracurricular success. It celebrates their accomplishments and serves as an inspiration to current and future students.</p>
+                </div>
             </div>
-            <div class="vertical-divider"></div>
-            <div class="highlight-item">
-                <img src="./Images/Highlights/highlight 2.jpg" alt="Highlight 2 Image">
-                <h2>Winner of OMNICANE AWARD 2023</h2>
-                <p>This highlight showcases the school's exceptional achievement in receiving the prestigious OMNICANE AWARD in 2023. The award recognizes excellence in a particular field or category, reflecting the dedication and hard work of the school's students, teachers, and staff.</p>
-            </div>
-            <div class="vertical-divider"></div>
-            <div class="highlight-item">
-                <img src="./Images/Highlights/highlight 3.jpg" alt="Highlight 3 Image">
-                <h2>List of laureates</h2>
-                <p>This section proudly displays the names and achievements of the school's laureates, those students who have achieved outstanding academic or extracurricular success. It celebrates their accomplishments and serves as an inspiration to current and future students.</p>
-            </div>
-        </div>
+        </section>
 
-        <!-- <div class="container" style="background-image: url('./Images/Acheivements/dragon_orig.png');">
-            <div id="center">
-                
+        <section class="achievements">
+            <h1 style="font-size: 30px;width: 100% !important;">Achievements</h1>
+
+            <div class="image-scroller" id="achievementScroller">
+                <div class="image-track" id="imageTrack">
+                    <img src="./Images/Acheivements/photo 6.jpg">
+                </div>
             </div>
-        </div> -->
-    </section>
+        </section>
     </main>
 </body>
 </html>

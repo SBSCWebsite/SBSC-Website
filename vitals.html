@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./Images/logo.png">
-    <title>Sookdeo Bissoondoyal State College - Alumni</title>
+    <title>Sookdeo Bissoondoyal State College - Vitals</title>
     <script src="scripts.js"></script>
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style_vitals.css"> 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +22,9 @@
 
     <div class="menuBar">
         <h3 onmouseover="TurnMenuOff()" onclick="SwitchPage('./index.html')">Home</h3>
-        <h3 onmouseover="TurnMenuOn()">About</h3>
+        <div class="menuBarSelected"><h3 onmouseover="TurnMenuOn()">About</h3></div>
         <h3 onmouseover="TurnMenuOff()" onclick="SwitchPage('./alumni.html')">Alumni</h3>
-        <div class="menuBarSelected"><h3 onmouseover="TurnMenuOff()">Awards</h3></div>
+        <h3 onmouseover="TurnMenuOff()" onclick="SwitchPage('./awards.html')">Awards</h3>
         <h3 onmouseover="TurnMenuOff()" onclick="SwitchPage('./programs.html')">Programs</h3>
     </div>
 
@@ -35,33 +36,52 @@
     </div>
 
     <section id="top" class="homeTopVideoFrame">
-        <img src="./Images/history/new school.jpg">
-    </section>
+        <img src="./Images/Vitals/header.jpeg">
+   </section>
 
     <main>
-        <section class="achievements">
-            <h1 style="font-size: 30px;">Achievements</h1>
-        
-            <div class="achievements-container">
-                <section class="achievement-item">
-                    <img src="./Images/Acheivements/photo 6.jpg" alt="Achievement 1">
-                    <div class="achievement-description">
-                        <h4>Achievement Title 1</h4>
-                        <p>Description of achievement 1 goes here.</p>
-                    </div>
-                </section>
-        
-                <section class="achievement-item">
-                    <img src="./Images/Acheivements/photo_2.jpg" alt="Achievement 2">
-                    <div class="achievement-description">
-                        <h4>Achievement Title 2</h4>
-                        <p>Description of achievement 2 goes here.</p>
-                    </div>
-                </section>
-        
-                </section>
-            </div>
-        </section>        
+        <section id="national_anthem_vitals">
+			<h1>NATIONAL ANTHEM</h1>
+			<h3>
+				?Glory to thee, Motherland,
+				O Motherland of mine.
+				Sweet i thy beauty,
+				Sweet is thy fragrance,
+				Around thee we gather
+				As one people,
+				As one nation,
+				In peace, justice and liberty.
+				Beloved country, may God bless thee
+				For ever and ever.
+			</h3>
+		</section>
+
+        <div class="horizontal-spacer"></div>
+
+		<section id="school_prayer_vitals">
+			<h1>SCHOOL PRAYER</h1>
+			<h3>
+				Lord
+				Make me an instrument of thy peace
+				Where there is hatred;
+				Let me sow love;
+				Where there is injury, pardon;
+				Where there is doubt, faith;
+				Where there is despair, hope;
+				Where there is darkness, light;
+				And where there is sadness, joy;
+
+				O Divine Master,
+				Grant that I may not so much seek,
+				To be consoled as to console;
+				To be understood as to understand;
+				To be loved as to love;
+				For it is in giving that we receive;
+				It is in pardoning that we are pardoned
+				And it is in dying that we are born to eternal life.
+				So help me God.
+			</h3>
+		</section>
     </main>
 </body>
 </html>

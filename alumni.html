@@ -28,18 +28,22 @@
     </div>
 
     <div class="menuBar menuBarVar1 hidden" id="aboutSubBar">
-        <h3>History</h3>
-        <h3>Vitals</h3>
-        <h3>Administration</h3>
-        <h3>Departments</h3>
+        <h3 onclick="SwitchPage('./history.html')">History</h3>
+        <h3 onclick="SwitchPage('./vitals.html')">Vitals</h3>
+        <h3 onclick="SwitchPage('./admin.html')">Administration</h3>
+        <h3 onclick="SwitchPage('./department.html')">Departments</h3>
     </div>
 
     <main>
-       <section id="top" class="homeTopVideoFrame">
-            <video autoplay muted loop>
-                <source src="./Videos/alumni_launching.mp4" type="video/mp4">
-            </video>
-       </section>
+        <section id="top" class="homeTopVideoFrame"> 
+            <div class="video-banner">
+                <iframe 
+                    id="vid"
+                    src="https://drive.google.com/file/d/1kOLGmhxe3VoDMxdPHMX9O7wwolP3XHDB/preview" 
+                    allow="autoplay"
+                ></iframe>
+            </div>
+        </section>
 
       
     </main>
