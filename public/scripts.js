@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const images = document.getElementsByTagName('img');
     for (let i = 0; i < images.length; i++) {
         images[i].onerror = function () {
-            this.src = './Images/no media.png'; // Replace with the path to your default image
+            //this.src = './Images/no media.png'; // Replace with the path to your default image
         };
     }
 });
