@@ -106,7 +106,7 @@ let isDragging = false;
 let startX;
 let scrollLeft;
 
-window.addEventListener('scroll', (event) => {
+window.addEventListener('DOMContentLoaded', (event) => {
   imageTrack = document.querySelector('.image-track');
   images = document.querySelectorAll('.image-track img');
 
