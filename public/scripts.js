@@ -99,33 +99,39 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-const imageTrack = document.querySelector('.image-track');
-const images = document.querySelectorAll('.image-track img');
+var imageTrack = document.querySelector('.image-track');
+var images = document.querySelectorAll('.image-track img');
 
 let isDragging = false;
 let startX;
 let scrollLeft;
 
-imageTrack.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startX = e.pageX - imageTrack.offsetLeft;
-  scrollLeft = imageTrack.scrollLeft;
-});
+window.addEventListener('scroll', (event) => {
+  imageTrack = document.querySelector('.image-track');
+  images = document.querySelectorAll('.image-track img');
 
-imageTrack.addEventListener('mousemove', (e) => {
-  if (!isDragging) return;
-  e.preventDefault();
-  const x = e.pageX - imageTrack.offsetLeft;
-  const walk = (x - startX) * 2; // Increase scroll speed (adjust 2 as needed)
-  imageTrack.scrollLeft = scrollLeft - walk;
-});
-
-imageTrack.addEventListener('mouseup', () => {
-  isDragging = false;
-});
-
-imageTrack.addEventListener('mouseleave', () => {
-  isDragging = false;
+  imageTrack.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - imageTrack.offsetLeft;
+    scrollLeft = imageTrack.scrollLeft;
+  });
+  
+  imageTrack.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - imageTrack.offsetLeft;
+    const walk = (x - startX) * 2; // Increase scroll speed (adjust 2 as needed)
+    imageTrack.scrollLeft = scrollLeft - walk;
+  });
+  
+  imageTrack.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+  
+  imageTrack.addEventListener('mouseleave', () => {
+    isDragging = false;
+  });
+  
 });
 
 function infiniteScroll() {
