@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./Images/logo.png">
+    <title>Sookdeo Bissoondoyal State College - Home</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="homeLogoTopBar" id="logoBar">
+        <img src="./Images/logo text.png">
+        <h1  style="display:none;">Sookdeo Bissoondoyal State College</h1>
+    </header>
+
+    <div class="menuBar">
+        <div class="menuBarSelected"><h3 onmouseover="TurnMenuOff()">Home</h3></div>
+        <h3 onmouseover="TurnMenuOn()">About</h3>
+        <h3 onmouseover="TurnMenuOff()" onclick="SwitchPage('./alumni.html')">Alumni</h3>
+        <h3 onmouseover="TurnMenuOff()" onclick="SwitchPage('./awards.html')">Awards</h3>
+        <h3 onmouseover="TurnMenuOff()" onclick="SwitchPage('./programs.html')">Programs</h3>
+    </div>
+
+    <div class="menuBar menuBarVar1 hidden" id="aboutSubBar">
+        <h3>History</h3>
+        <h3>Vitals</h3>
+        <h3>Administration</h3>
+        <h3>Departments</h3>
+    </div>
+
+    <main>
+       <section id="top" class="homeTopVideoFrame">
+            <video autoplay muted loop>
+                <source src="./Videos/aero.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" style="display:none;">
+                <h4>Mr Vijayen Gengan</h3>
+            </div>
+       </section>
+
+       <section class="highlights">
+        <h1 style="font-size: 30px;width: 100% !important;">Highlights</h1>
+        <div class="highlight-container">
+            <div class="highlight-item">
+                <img src="./Images/Highlights/highlight 1.jpg" alt="Highlight 1 Image">
+                <h2>Golden jubilee celebrations</h2>
+                <p>This highlight commemorates the school's 50th anniversary with a series of special events, including the release of a commemorative magazine capturing the institution's rich history and achievements, and an exhibition showcasing its growth and evolution over the decades.</p>
+            </div>
+            <div class="vertical-divider"></div>
+            <div class="highlight-item">
+                <img src="./Images/Highlights/highlight 2.jpg" alt="Highlight 2 Image">
+                <h2>Winner of OMNICANE AWARD 2023</h2>
+                <p>This highlight showcases the school's exceptional achievement in receiving the prestigious OMNICANE AWARD in 2023. The award recognizes excellence in a particular field or category, reflecting the dedication and hard work of the school's students, teachers, and staff.</p>
+            </div>
+            <div class="vertical-divider"></div>
+            <div class="highlight-item">
+                <img src="./Images/Highlights/highlight 3.jpg" alt="Highlight 3 Image">
+                <h2>List of laureates</h2>
+                <p>This section proudly displays the names and achievements of the school's laureates, those students who have achieved outstanding academic or extracurricular success. It celebrates their accomplishments and serves as an inspiration to current and future students.</p>
+            </div>
+        </div>
+
+        <!-- <div class="container" style="background-image: url('./Images/Acheivements/dragon_orig.png');">
+            <div id="center">
+                
+            </div>
+        </div> -->
+    </section>
+    </main>
+</body>
+</html>

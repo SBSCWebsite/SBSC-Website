@@ -1,0 +1,297 @@
+:root {
+    --sbscBlue: rgb(16, 47, 119);
+    --sbscBlueLogoBar: rgba(16, 47, 119, 0.539);
+    --sbscBlueSubMenu: rgba(16, 47, 119, 0.308);
+    --sbscOrange: rgb(214, 146, 56);
+
+    --blurIntensity: 10px;
+    --blurIntensityLogo: 20px;
+    --grayScale: 100;
+}
+
+.playfair-display-1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Basic Styling */
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    margin: 0; /* Remove default body margins */
+    display: flexbox;
+}
+  
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #f0f0f0;
+    padding: 1rem;
+}
+
+header.dim {
+    backdrop-filter: blur(var(--blurIntensityLogo)) grayscale(var(--grayScale)); /* Adjust blur radius as needed */
+    -webkit-backdrop-filter: blur(var(--blurIntensityLogo)) grayscale(var(--grayScale)); /* Safari support */
+
+    background-color: var(--sbscBlueLogoBar);
+
+    overflow: hidden;
+    border-bottom: 1px var(--sbscBlue) solid;
+
+
+    transition: all 150ms ease-in-out;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-right: 1px;
+}
+
+.menuBar {
+    width: 100% !important;
+    height: 10%;
+    opacity: 1;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(245, 245, 255);
+
+    transition: all 150ms ease-in-out;
+}
+
+.menuBarVar1 {
+    position:absolute;
+    top: auto;
+
+    height: auto !important;
+
+    border-top: 1px var(--sbscBlue) solid;
+
+    /* Frosted Glass Effect */
+    backdrop-filter: blur(var(--blurIntensity)) grayscale(var(--grayScale)); /* Adjust blur radius as needed */
+    -webkit-backdrop-filter: blur(var(--blurIntensity)) grayscale(var(--grayScale)); /* Safari support */
+
+    background-color: var(--sbscBlueSubMenu);
+
+    transition: all 150ms ease-in-out;
+}
+
+.menuBarVar1 * { /* Target all child elements */
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    color: var(--sbscOrange) !important;
+
+    transition: all 150ms ease-in-out;
+}
+
+.menuBar.hidden {
+    height: 0;
+    visibility: collapse;
+    opacity: 0 !important;
+
+    transition: all 150ms ease-in-out;
+}
+
+.menuBar h3 {
+    font-weight: 100;
+    padding-left: 2vw;
+
+    color: #888888;
+
+    transition: all 150ms ease-in-out;
+}
+
+.menuBar h3:hover {
+    font-weight: 700 !important;
+    padding-left: 2vw !important;
+
+    color: var(--sbscOrange);
+
+    transition: all 150ms ease-in-out;
+}
+
+.menuBarSelected h3 {
+    font-weight: 700 !important;
+    padding-left: 2vw !important;
+
+    color: var(--sbscBlue) !important;
+
+    transition: all 150ms ease-in-out;
+}
+
+.menuBarSelected h3:hover {
+    font-weight: 700 !important;
+    padding-left: 2vw !important;
+
+    color: var(--sbscOrange) !important;
+
+    transition: all 150ms ease-in-out;
+}
+
+.homeLogoTopBar {
+    width: 100% !important;
+    height: 10% !important;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(245, 245, 255);
+}
+
+.homeLogoTopBar img {
+    width: 50%;
+    height: 100%;
+
+    transition: all 150ms ease-in-out;
+}
+
+.homeLogoTopBar h1 {
+    margin-left: 3%;
+    height: 100%;
+    padding-top: 0.1vh;
+}
+
+.homeTopVideoFrame {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 0;
+    height: auto;
+    max-height: 70vh;
+    overflow: hidden;
+}
+
+.homeTopVideoFrame video {
+    width: 100% !important;
+    height: auto ;
+
+    object-fit: cover;
+    transition: object-position 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 1000px) { /* Adjust breakpoint as needed for laptops */
+    .homeTopVideoFrame {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 0;
+        height: auto;
+        max-height: 90vh;
+        overflow: hidden;
+    }
+    
+    .homeTopVideoFrame video {
+        height: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+}
+
+.video-overlay {
+    position:absolute;
+    top: 1px;
+    left: 1px;
+    transform: translate(50vw, 60vh); /* Center the overlay */
+    color: rgb(0, 0, 0);                    /* Ensure text is visible against video */
+    /* Add background or other styles as needed */
+}
+
+.highlights {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.highlights h1 {
+    display: flex;         /* Make the h1 a flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically (if needed) */
+}
+   
+
+.highlight-container {
+    display: flex;             /* Enable flexbox for horizontal layout */
+    justify-content: space-around; /* Distribute items evenly with space */
+    width: 100%;                
+}
+
+.highlight-item {
+    width: 25%;               /* Adjust width as needed */
+    padding: 15px;             /* Add padding around content */
+    text-align: center;        /* Center the text content */
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-item img {
+    width: 100%;              /* Fill the width of the container */
+    height: 300px;            /* Set a fixed height (adjust as needed) */
+    object-fit: cover;        /* Crop the image to fill the container while maintaining aspect ratio */
+    border-radius: 10px;
+
+    transition: all 150ms ease-in-out;
+}
+
+.highlight-item img:hover {
+    border-radius: 30px;
+    width: 99%; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.487);
+
+    border: var(--sbscOrange) 1px solid;
+
+    transition: all 150ms ease-in-out;
+}
+
+.vertical-divider {
+    width: 1px;
+    background-color: var(--sbscBlue);
+    opacity: 0.3;
+}
+
+/* Circular */
+.container {
+    position: relative; /* Required for absolute positioning */
+    width: 600px; /* Adjust size as needed */
+    height: 600px;
+    margin: 0 auto;
+
+    background-image: url('./Images/Acheivements/dragon_orig.png');
+    background-size: contain; /* Make the image fit the container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image in the container */
+  }
+  
+  #center {
+    width: 10px;
+    height: 10px;
+    background-color: red; /* Optional, for visualization */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* .child-image {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 1s linear;
+  } */
+
+.child-image {
+    position: absolute;
+    width: 50px; /* Adjust size as needed */
+    height: 58px; /* Adjust for hexagon proportions */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: transform 1s linear;
+  }
+  

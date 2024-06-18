@@ -1,1 +1,2 @@
-# SBSC-Website
+# Sbsc-website
+Website for SBSC
