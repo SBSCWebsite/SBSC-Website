@@ -179,20 +179,42 @@ footer {
     transition: object-position 0.3s ease-in-out;
 }
 
+.video-banner {
+    width: 100%; /* Take full width */
+    height: auto; /* Adjust the height as needed */
+    overflow: hidden; /* Hide overflowing video content */
+}
+
+.video-banner iframe {
+    min-width: 100vw;
+    width: 100vw; 
+    min-height: 56.25vw; /* Stretch iframe to the full container size */
+    /* height: 49vh; */
+    border: none; /* Remove default iframe border */
+    object-fit: cover; /* Cover the entire container, cropping if needed */
+     transition: all 0.3s ease-in-out;
+}
+
+
 @media screen and (min-width: 1000px) { /* Adjust breakpoint as needed for laptops */
     .homeTopVideoFrame {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
         padding: 0;
-        height: auto;
+        height: 56.25vw;
         max-height: 90vh;
         overflow: hidden;
     }
-    
-    .homeTopVideoFrame video {
-        height: 100%;
-      transition: all 0.3s ease-in-out;
+
+    .video-banner iframe {
+        min-width: 100vw;
+        width: 100vw; 
+        height: 56.25vw;
+        border: none; /* Remove default iframe border */
+        object-fit: cover; /* Cover the entire container, cropping if needed */
+        transition: all 0.3s ease-in-out;
     }
+    
 }
 
 .video-overlay {
