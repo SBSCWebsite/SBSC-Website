@@ -174,11 +174,19 @@ footer {
 }
 
 .homeTopVideoFrame video {
-    width: 100% !important;
+    /* width: 100% !important;
     height: auto ;
 
     object-fit: cover;
-    transition: object-position 0.3s ease-in-out;
+    transition: object-position 0.3s ease-in-out; */
+
+    min-width: 100vw;
+    width: 100vw; 
+    min-height: 56.25vw; /* Stretch iframe to the full container size */
+    height: 56.25vw;
+    border: none; /* Remove default iframe border */
+    object-fit: cover; /* Cover the entire container, cropping if needed */
+    transition: all 0.3s ease-in-out;
 }
 
 .homeTopVideoFrame img {
@@ -215,6 +223,17 @@ footer {
         max-height: 90vh;
         overflow: hidden;
     }
+
+
+.homeTopVideoFrame video {
+    min-width: 100vw;
+    width: 100vw; 
+    min-height: 56.25vw; /* Stretch iframe to the full container size */
+    /* height: 49vh; */
+    border: none; /* Remove default iframe border */
+    object-fit: cover; /* Cover the entire container, cropping if needed */
+    transition: all 0.3s ease-in-out;
+}
 
     .video-banner iframe {
         min-width: 100vw;

@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const images = document.getElementsByTagName('img');
     for (let i = 0; i < images.length; i++) {
         images[i].onerror = function () {
-            //this.src = './Images/no media.png'; // Replace with the path to your default image
+            this.src = './Images/no_media.png'; // Replace with the path to your default image
         };
     }
 });
@@ -60,16 +60,16 @@ function SwitchPage(url){
 }
 
 var acheivements = [
-    "highlight 1.jpg",
-    "highlight 2.jpg",
-    "highlight 3.jpg",
-    "photo 1.jpg",
-    "photo 2.jpg",
-    "photo 3.jpg",
-    "photo 4.jpg",
-    "photo 5.jpg",
-    "photo 7.jpg",
-    "photo 8.jpg",
+    "highlight_1.jpg",
+    "highlight_2.jpg",
+    "highlight_3.jpg",
+    "photo_1.jpg",
+    "photo_2.jpg",
+    "photo_3.jpg",
+    "photo_4.jpg",
+    "photo_5.jpg",
+    "photo_7.jpg",
+    "photo_8.jpg",
 ]
 
 // //Circular
