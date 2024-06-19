@@ -1,0 +1,51 @@
+/* Basic Styles */
+.achievements {
+    text-align: center; /* Center the heading */
+    margin-bottom: 30px; /* Add space below the section */
+  }
+  
+  .achievements h1 {
+    font-size: 30px; 
+  }
+  
+  .achievements-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual Achievement Item Styles */
+  .achievement-item {
+    border: 1px solid var(--sbscBlue); 
+    padding: 15px; 
+    border-radius: 8px;  
+    text-align: center; 
+    max-width: 300px; /* Limit the width of each item */
+    flex: 1 1 280px; /* Allow items to grow and shrink with a minimum width */
+  }
+  
+  .achievement-item img {
+    max-width: 100%;   
+    height: auto;       
+    margin-bottom: 10px;  
+    border-radius: 8px;   /* Add rounded corners to the image */
+  }
+  
+  .achievement-description h4 {
+    margin-bottom: 5px;  
+  }
+  
+  /* Additional Styling Options */
+  /* .achievements-container {
+    background-color: #f8f9fa; 
+  } */
+  
+  .achievement-item:hover {
+    border: 1px solid var(--sbscOrange); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+
+    transform: translateY(-5px); /* Optional: Subtle hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Optional: Enhanced shadow on hover */
+  }
+  

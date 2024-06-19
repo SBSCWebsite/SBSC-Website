@@ -43,6 +43,7 @@ header.dim {
     overflow: hidden;
     border-bottom: 1px var(--sbscBlue) solid;
 
+    z-index: 1;
 
     transition: all 150ms ease-in-out;
 }
